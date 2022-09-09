@@ -8,10 +8,12 @@ body {
 }
 
 header {
+  padding-top: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   background-color: #000;
+  margin-bottom: 50px;
 }
 
 header .Logo {
