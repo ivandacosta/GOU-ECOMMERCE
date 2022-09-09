@@ -9,6 +9,7 @@ import ItemDetails from "./pages/ItemsDetails/ItemsDetails";
 
 //components
 import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/detail/:id" element={<ItemDetails />}></Route>
         </Routes>
+        <Footer />
       </div>
     </Router>
   );
