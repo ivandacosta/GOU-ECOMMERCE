@@ -18,7 +18,9 @@ function Header() {
       <Nav />
 
       <div className="Cart">
-        <FontAwesomeIcon icon={faCartShopping} />
+        <p>
+          <FontAwesomeIcon icon={faCartShopping} /> 0
+        </p>
       </div>
     </header>
   );
