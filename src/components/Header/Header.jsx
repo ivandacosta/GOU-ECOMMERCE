@@ -1,6 +1,5 @@
 import React from "react";
-import Nav from "../Navigation/Nav";
-
+import { Link } from "react-router-dom";
 //icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
@@ -8,11 +7,15 @@ import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 //style
 import "./Header.css";
 
+//
+import Nav from "../Navigation/Nav";
 function Header() {
   return (
     <header>
       <div className="Logo">
-        <h2>GOU</h2>
+        <Link className="Link" to="/">
+          <h2>GOU</h2>
+        </Link>
       </div>
 
       <Nav />

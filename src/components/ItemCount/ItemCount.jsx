@@ -1,10 +1,8 @@
 import React from "react";
-import { useState } from "react";
+
 import "./ItemCount.css";
 
-const ItemCount = ({ initial, stock, onAdd }) => {
-  const [Counter, SetCounter] = useState(initial);
-
+const ItemCount = ({ initial, stock, onAdd, Counter, SetCounter }) => {
   const CountUp = () => {
     if (Counter < stock) {
       SetCounter(Counter + 1);
